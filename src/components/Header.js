@@ -67,6 +67,7 @@ const Container = styled.div`
     flex-wrap: nowrap;
     text-decoration: none;
     letter-spacing: 1px;
+    color: white;
   }
 `;
 
@@ -78,11 +79,13 @@ const RightMenu = styled.div`
     text-transform: uppercase;
     margin: 10px;
     text-decoration: none;
+    color: white;
   }
 `;
 
 const CustomMenu = styled(MenuIcon)`
   cursor: pointer;
+  color: white;
 `;
 
 const BurgerNav = styled.div`

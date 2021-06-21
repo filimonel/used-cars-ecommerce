@@ -3,7 +3,11 @@ import styled from "styled-components";
 import Fade from "react-reveal";
 
 const Landing = () => {
-  return <LandingSection></LandingSection>;
+  return (
+    <LandingSection>
+      <FormWrapper></FormWrapper>
+    </LandingSection>
+  );
 };
 
 const LandingSection = styled.section`
@@ -13,6 +17,11 @@ const LandingSection = styled.section`
   background-size: cover;
   background-postion: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
+
+const FormWrapper = styled.div``;
 
 export default Landing;
