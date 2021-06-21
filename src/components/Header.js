@@ -4,27 +4,27 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
 const Header = () => {
+  const [burgerStatus, setBurgerOpen] = useState(false);
 
   return (
     <Container>
-      <a href="#">
-        Driven
-      </a>
-      <Menu>
-        
-      </Menu>
+      <a href="#">Driven</a>
+
       <RightMenu>
         <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="#">Account</a>
         <CustomMenu onClick={() => setBurgerOpen(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerOpen(false)} />
         </CloseWrapper>
-        
+
         <li>
-          <a href="#">Exisiting Inventory</a>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">New Inventory</a>
         </li>
         <li>
           <a href="#">Used Inventory</a>
@@ -33,16 +33,13 @@ const Header = () => {
           <a href="#">Trade-In</a>
         </li>
         <li>
-          <a href="#">Cyber Truck</a>
+          <a href="#">Finance</a>
         </li>
         <li>
-          <a href="#">Roadster</a>
+          <a href="#">Dealers</a>
         </li>
         <li>
-          <a href="#">Semi</a>
-        </li>
-        <li>
-          <a href="#">Charging</a>
+          <a href="#">Contact</a>
         </li>
       </BurgerNav>
     </Container>
@@ -62,21 +59,14 @@ const Container = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
-`;
 
-const Menu = styled.div`
-  display: flex;
-  alignt-items: center;
-  justify-content: center;
-  flex: 1;
   a {
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
-  }
-  @media (max-width: 768px) {
-    display: none;
+    text-decoration: none;
+    letter-spacing: 1px;
   }
 `;
 
@@ -87,6 +77,7 @@ const RightMenu = styled.div`
     font-weight: 600;
     text-transform: uppercase;
     margin: 10px;
+    text-decoration: none;
   }
 `;
 
@@ -114,6 +105,7 @@ const BurgerNav = styled.div`
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     a {
       font-weight: 600;
+      color: #393c41;
     }
   }
 `;
