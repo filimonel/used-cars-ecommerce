@@ -13,7 +13,7 @@ const Header = () => {
         <a href="#">Driven</a>
 
         <RightMenu>
-          <a href="#">Shop</a>
+          <a href="#">Trade</a>
           <a href="#">Account</a>
           <CustomMenu onClick={() => setBurgerOpen(true)} />
         </RightMenu>

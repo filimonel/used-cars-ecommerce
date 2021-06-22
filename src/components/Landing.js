@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const Landing = () => {
   return (
     <LandingSection className="landing">
@@ -12,10 +12,13 @@ const Landing = () => {
           <input type="search" placeholder="Dream Car?" />
           <input type="submit" value="Go" />
         </form> */}
-          
         </div>
       </Fade>
-      <a href="#"><ExpandMoreIcon fontSize="inherit" /></a>
+      <Fade top>
+        <a href="#">
+          <ExpandMoreIcon fontSize="inherit" />
+        </a>
+      </Fade>
     </LandingSection>
   );
 };
@@ -39,7 +42,7 @@ const LandingSection = styled.section`
     align-items: center;
     flex-direction: column;
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 500;
       text-shadow: #a59e98 0px 0px 5px;
     }
@@ -47,10 +50,15 @@ const LandingSection = styled.section`
   a {
     position: absolute;
     bottom: 0vh;
-    font-size: 50px;
-    color: white;
   }
-  
+  svg {
+    font-size: 60px;
+    color: white;
+    transition: ease 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 `;
 
 export default Landing;
