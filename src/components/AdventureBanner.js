@@ -68,7 +68,7 @@ const AdventureBanner = () => {
 };
 
 const AdventureSection = styled.section`
-  height: 60vh;
+  height: 70vh;
   weight: 100%;
   .banner {
     height: 100%;
