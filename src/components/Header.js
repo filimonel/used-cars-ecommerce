@@ -8,47 +8,48 @@ const Header = () => {
   const [burgerStatus, setBurgerOpen] = useState(false);
 
   return (
-    <Fade top duration={2000}>
-      <Container>
+    <Container id="header">
+      <Fade top duration={2000}>
         <a href="#">Driven</a>
-
+      </Fade>
+      <Fade top duration={2000}>
         <RightMenu>
           <a href="#">Buy</a>
           <a href="#">Sell</a>
           <CustomMenu onClick={() => setBurgerOpen(true)} />
         </RightMenu>
-        <BurgerNav show={burgerStatus}>
-          <CloseWrapper>
-            <CustomClose onClick={() => setBurgerOpen(false)} />
-          </CloseWrapper>
+      </Fade>
+      <BurgerNav show={burgerStatus}>
+        <CloseWrapper>
+          <CustomClose onClick={() => setBurgerOpen(false)} />
+        </CloseWrapper>
 
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">New Inventory</a>
-          </li>
-          <li>
-            <a href="#">Used Inventory</a>
-          </li>
-          <li>
-            <a href="#">Trade-In</a>
-          </li>
-          <li>
-            <a href="#">Finance</a>
-          </li>
-          <li>
-            <a href="#">Research</a>
-          </li>
-          <li>
-            <a href="#">Dealers</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </BurgerNav>
-      </Container>
-    </Fade>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">New Inventory</a>
+        </li>
+        <li>
+          <a href="#">Used Inventory</a>
+        </li>
+        <li>
+          <a href="#">Trade-In</a>
+        </li>
+        <li>
+          <a href="#">Finance</a>
+        </li>
+        <li>
+          <a href="#">Research</a>
+        </li>
+        <li>
+          <a href="#">Dealers</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </BurgerNav>
+    </Container>
   );
 };
 
@@ -64,7 +65,7 @@ const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 90;
 
   a {
     font-weight: 500;

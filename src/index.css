@@ -12,3 +12,7 @@ body {
   background-color: #1a1b1e;
 }
 
+#header.active {
+  transition: 0.5s ease;
+  display: none;
+}
