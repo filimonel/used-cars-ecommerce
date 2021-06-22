@@ -10,7 +10,7 @@ const AdventureBanner = () => {
           <h1 style={{color: 'white', fontWeight: '500'}}>Search</h1>
           <div>
             <select name="Make" id="" className="select">
-              <option value="0">Make:</option>
+              <option value="0">Make</option>
               <option value="1">Audi</option>
               <option value="2">BMW</option>
               <option value="3">Citroen</option>
@@ -27,7 +27,7 @@ const AdventureBanner = () => {
           </div>
           <div>
             <select name="Model" id="" className="select">
-              <option value="0">Model:</option>
+              <option value="0">Model</option>
               <option value="1">Audi</option>
               <option value="2">BMW</option>
               <option value="3">Citroen</option>
@@ -44,7 +44,7 @@ const AdventureBanner = () => {
           </div>
           <div>
             <select name="Location" id="" className="select">
-              <option value="0">Location:</option>
+              <option value="0">Location</option>
               <option value="1">Melbourne</option>
               <option value="2">Sydney</option>
               <option value="3">Brisbane</option>
@@ -91,8 +91,7 @@ const AdventureSection = styled.section`
     .select {
       height: 40px;
       width: 300px;
-      border-radius: 3px;
-      
+      font-weight: 400;
     }
     .flex-form input[type="submit"] {
       background: #48b9d3;
@@ -106,6 +105,10 @@ const AdventureSection = styled.section`
       -webkit-transition: all 0.2s;
       -moz-transition: all 0.2s;
       transition: all 0.2s;
+      &:hover {
+        background: #2f97af;
+        border: 1px solid #2f97af;
+      }
     }
   }
 `;
