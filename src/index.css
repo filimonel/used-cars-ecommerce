@@ -23,6 +23,7 @@ body {
 
 #headerRight.active a {
   color: black;
+  
 }
 
 #headerRight.active svg {

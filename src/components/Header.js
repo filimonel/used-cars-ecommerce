@@ -66,7 +66,7 @@ const Container = styled.div`
   left: 0;
   right: 0;
   z-index: 90;
-
+  transition: 0.5s ease;
   a {
     font-weight: 500;
     text-transform: uppercase;
