@@ -1,17 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 const Landing = () => {
   return (
-    <LandingSection>
+    <LandingSection className="landing">
+      <Fade bottom cascade>
       <div className="welcome-text">
         <h1>Find your next car</h1>
-        <form className="flex-form">
+        {/* <form className="flex-form">
           <input type="search" placeholder="Dream Car?" />
           <input type="submit" value="Go" />
-        </form>
+        </form> */}
+        <a href="#">Start</a>
       </div>
+      </Fade>
     </LandingSection>
   );
 };
@@ -32,13 +35,14 @@ const LandingSection = styled.section`
     width: 50%;
     display: flex;
     align-items: center;
-    // justify-content: center;
     flex-direction: column;
-
     h1 {
       font-size: 3.5rem;
       font-weight: 500;
-      text-shadow: #c9b4ae 0px 0px 5px;
+      text-shadow: #a59e98 0px 0px 5px;
+    }
+    a {
+      
     }
   }
   .flex-form input[type="submit"] {
@@ -52,8 +56,8 @@ const LandingSection = styled.section`
     transition: all 0.2s;
   }
   .flex-form input[type="submit"]:hover {
-    background: #69cbe0;
-    border: 1px solid #69cbe0;
+    background: #336567;
+    border: 1px solid #336567;
   }
   .flex-form {
     display: -webkit-box;
@@ -63,7 +67,7 @@ const LandingSection = styled.section`
     width: 351px;
     height: 40px;
     margin-top: 30px;
-    opacity: 0.8;
+    opacity: 0.6;
     transition: 1s ease;
     &:hover {
       opacity: 1;

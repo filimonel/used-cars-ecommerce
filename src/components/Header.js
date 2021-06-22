@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
@@ -7,42 +8,44 @@ const Header = () => {
   const [burgerStatus, setBurgerOpen] = useState(false);
 
   return (
-    <Container>
-      <a href="#">Driven</a>
+    <Fade top duration={2000}>
+      <Container>
+        <a href="#">Driven</a>
 
-      <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Account</a>
-        <CustomMenu onClick={() => setBurgerOpen(true)} />
-      </RightMenu>
-      <BurgerNav show={burgerStatus}>
-        <CloseWrapper>
-          <CustomClose onClick={() => setBurgerOpen(false)} />
-        </CloseWrapper>
+        <RightMenu>
+          <a href="#">Shop</a>
+          <a href="#">Account</a>
+          <CustomMenu onClick={() => setBurgerOpen(true)} />
+        </RightMenu>
+        <BurgerNav show={burgerStatus}>
+          <CloseWrapper>
+            <CustomClose onClick={() => setBurgerOpen(false)} />
+          </CloseWrapper>
 
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">New Inventory</a>
-        </li>
-        <li>
-          <a href="#">Used Inventory</a>
-        </li>
-        <li>
-          <a href="#">Trade-In</a>
-        </li>
-        <li>
-          <a href="#">Finance</a>
-        </li>
-        <li>
-          <a href="#">Dealers</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </BurgerNav>
-    </Container>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New Inventory</a>
+          </li>
+          <li>
+            <a href="#">Used Inventory</a>
+          </li>
+          <li>
+            <a href="#">Trade-In</a>
+          </li>
+          <li>
+            <a href="#">Finance</a>
+          </li>
+          <li>
+            <a href="#">Dealers</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </BurgerNav>
+      </Container>
+    </Fade>
   );
 };
 
@@ -65,7 +68,6 @@ const Container = styled.div`
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
-    text-decoration: none;
     letter-spacing: 1px;
     color: white;
   }
@@ -78,7 +80,6 @@ const RightMenu = styled.div`
     font-weight: 600;
     text-transform: uppercase;
     margin: 10px;
-    text-decoration: none;
     color: white;
   }
 `;
