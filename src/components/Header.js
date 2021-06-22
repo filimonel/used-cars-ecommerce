@@ -13,7 +13,7 @@ const Header = () => {
         <a href="#">Driven</a>
       </Fade>
       <Fade top duration={2000}>
-        <RightMenu>
+        <RightMenu id="headerRight">
           <a href="#">Buy</a>
           <a href="#">Sell</a>
           <CustomMenu onClick={() => setBurgerOpen(true)} />

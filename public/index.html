@@ -43,10 +43,12 @@
       window.addEventListener("scroll", () => {
         if (window.scrollY === 0) {
           header.classList.remove("active");
+          headerRight.classList.remove("active");
         }
 
         if (window.scrollY > 0) {
           header.classList.add("active");
+          headerRight.classList.add("active");
         }
       });
     </script>

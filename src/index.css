@@ -14,5 +14,17 @@ body {
 
 #header.active {
   transition: 0.5s ease;
-  display: none;
+  background: white;
+}
+
+#header.active > * {
+  color: black;
+}
+
+#headerRight.active a {
+  color: black;
+}
+
+#headerRight.active svg {
+  color: black;
 }

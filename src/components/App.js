@@ -5,6 +5,7 @@ import Header from "./Header";
 import Search from "./Search";
 import About from "./About";
 import SearchForm from "./SearchForm";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Search />
       <SearchForm />
       <About />
+      <Footer />
     </AppWrapper>
   );
 }
