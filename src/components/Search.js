@@ -39,7 +39,7 @@ const Search = () => {
 };
 
 const SearchSection = styled.section`
-  height: 150vh;
+  height: 100vh;
   width: 100vw;
   background: white;
   h1 {

@@ -12,7 +12,7 @@ import Collapse from "@material-ui/core/Collapse";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import { red } from "@material-ui/core/colors";
+import { red, blue, yellow, green } from "@material-ui/core/colors";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -39,11 +39,11 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: blue[500],
   },
 }));
 
-const Car = ({ avatar }) => {
+const Car = ({ avatar, title }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -65,7 +65,7 @@ const Car = ({ avatar }) => {
               <MoreVertIcon />
             </IconButton>
           }
-          title="Shrimp and Chorizo Paella"
+          title={title}
           subheader="September 14, 2016"
         />
         <CardMedia
