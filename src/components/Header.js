@@ -38,6 +38,9 @@ const Header = () => {
             <a href="#">Finance</a>
           </li>
           <li>
+            <a href="#">Research</a>
+          </li>
+          <li>
             <a href="#">Dealers</a>
           </li>
           <li>

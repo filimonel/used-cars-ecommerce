@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Car = ({ avatar, title }) => {
+const Car = ({ avatar, title, img, location }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -66,18 +66,12 @@ const Car = ({ avatar, title }) => {
             </IconButton>
           }
           title={title}
-          subheader="September 14, 2016"
+          subheader={location}
         />
-        <CardMedia
-          className={classes.media}
-          image="/images/camping.jpg"
-          title="Paella dish"
-        />
+        <CardMedia className={classes.media} image={img} title="Paella dish" />
         <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam aperiam maxime, autem repellat.
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -87,6 +81,7 @@ const Car = ({ avatar, title }) => {
           <IconButton aria-label="share">
             <ShareIcon />
           </IconButton>
+          
           <IconButton
             className={clsx(classes.expand, {
               [classes.expandOpen]: expanded,

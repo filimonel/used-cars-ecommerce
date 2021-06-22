@@ -5,7 +5,7 @@ const Search = () => {
   return (
     <SearchSection>
       <div className="title-wrapper">
-        <h1>Choose Body</h1>
+        <h1>Browse car by body type</h1>
       </div>
       <CarBodyWrapper>
         <div className="car-body-card">
@@ -46,6 +46,7 @@ const SearchSection = styled.section`
     text-align: center;
     padding: 20px;
     color: #393c41;
+    font-weight: 500;
   }
 `;
 
@@ -60,6 +61,10 @@ const CarBodyWrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: ease 1s;
+  }
+  .car-body-card:hover {
+    background: lightGray;
   }
   img {
     height: 50px;
