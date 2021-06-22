@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Cars from "./Cars";
 const Search = () => {
   return (
     <SearchSection>
@@ -33,17 +33,19 @@ const Search = () => {
           <p>Suv</p>
         </div>
       </CarBodyWrapper>
+      <Cars />
     </SearchSection>
   );
 };
 
 const SearchSection = styled.section`
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   background: white;
   h1 {
     text-align: center;
     padding: 20px;
+    color: #393c41;
   }
 `;
 
@@ -51,7 +53,6 @@ const CarBodyWrapper = styled.div`
   height: 200px;
   width: 100%;
   display: flex;
-  border: 1px solid black;
   .car-body-card {
     height: 100%;
     width: 100%;
@@ -59,11 +60,14 @@ const CarBodyWrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid black;
   }
   img {
     height: 50px;
     margin-bottom: 10px;
+    cursor: pointer;
+  }
+  p {
+    color: #393c41;
   }
 `;
 export default Search;

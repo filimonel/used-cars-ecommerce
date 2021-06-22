@@ -13,8 +13,8 @@ const Header = () => {
         <a href="#">Driven</a>
 
         <RightMenu>
-          <a href="#">Trade</a>
-          <a href="#">Account</a>
+          <a href="#">Buy</a>
+          <a href="#">Sell</a>
           <CustomMenu onClick={() => setBurgerOpen(true)} />
         </RightMenu>
         <BurgerNav show={burgerStatus}>
@@ -64,7 +64,7 @@ const Container = styled.div`
   z-index: 1;
 
   a {
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
@@ -77,7 +77,7 @@ const RightMenu = styled.div`
   display: flex;
   align-items: center;
   a {
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     margin: 10px;
     color: white;
@@ -108,7 +108,7 @@ const BurgerNav = styled.div`
     padding: 15px 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     a {
-      font-weight: 600;
+      font-weight: 500;
       color: #393c41;
     }
   }
