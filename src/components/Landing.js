@@ -80,6 +80,7 @@ const LandingSection = styled.section`
       border-radius: 0;
       outline: 0;
       -webkit-appearance: none;
+      transition: 0.5s ease;
       opacity: 0.5;
 
       &:hover {
