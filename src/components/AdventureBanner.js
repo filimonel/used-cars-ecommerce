@@ -89,16 +89,17 @@ const AdventureSection = styled.section`
       background: rgba(81, 163, 189, 0.6);
     }
     .select {
-      height: 30px;
+      height: 40px;
       width: 300px;
       border-radius: 3px;
+      
     }
     .flex-form input[type="submit"] {
       background: #48b9d3;
       border: 1px solid #48b9d3;
       color: #fff;
       height: 30px;
-      width: 100px;
+      width: 120px;
       border-radius: 2px;
       padding: 0 30px;
       cursor: pointer;

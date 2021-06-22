@@ -7,7 +7,9 @@ const About = () => {
   return (
     <SearchFormSection>
       <div className="content-wrapper">
-        <div className="content-card"></div>
+        <div className="content-card">
+
+        </div>
         <div className="content-card"></div>
         <div className="content-card"></div>
       </div>
