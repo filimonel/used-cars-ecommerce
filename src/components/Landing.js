@@ -1,20 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const Landing = () => {
   return (
     <LandingSection className="landing">
       <Fade bottom cascade>
-      <div className="welcome-text">
-        <h1>Find your next car</h1>
-        {/* <form className="flex-form">
+        <div className="welcome-text">
+          <h1>Find your next car</h1>
+          {/* <form className="flex-form">
           <input type="search" placeholder="Dream Car?" />
           <input type="submit" value="Go" />
         </form> */}
-        <a href="#">Start</a>
-      </div>
+          
+        </div>
       </Fade>
+      <a href="#"><ExpandMoreIcon fontSize="inherit" /></a>
     </LandingSection>
   );
 };
@@ -29,9 +30,10 @@ const LandingSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  postion: relative;
   .welcome-text {
     color: white;
-    height: 50%;
+    height: 60%;
     width: 50%;
     display: flex;
     align-items: center;
@@ -41,52 +43,14 @@ const LandingSection = styled.section`
       font-weight: 500;
       text-shadow: #a59e98 0px 0px 5px;
     }
-    a {
-      
-    }
   }
-  .flex-form input[type="submit"] {
-    background: #234546;
-    border: 1px solid #234546;
-    color: #fff;
-    padding: 0 30px;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
+  a {
+    position: absolute;
+    bottom: 0vh;
+    font-size: 50px;
+    color: white;
   }
-  .flex-form input[type="submit"]:hover {
-    background: #336567;
-    border: 1px solid #336567;
-  }
-  .flex-form {
-    display: -webkit-box;
-    display: flex;
-    z-index: 10;
-    position: relative;
-    width: 351px;
-    height: 40px;
-    margin-top: 30px;
-    opacity: 0.6;
-    transition: 1s ease;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  .flex-form > * {
-    border: 0;
-    padding: 0 0 0 10px;
-    background: #fff;
-    font-size: 1rem;
-    border-radius: 0;
-    outline: 0;
-    -webkit-appearance: none;
-  }
-  input[type="search"] {
-    flex-basis: 500px;
-  }
+  
 `;
-
-const LandingTextWrapper = styled.div``;
 
 export default Landing;
