@@ -4,7 +4,7 @@ import Landing from "./Landing";
 import Header from "./Header";
 import Search from "./Search";
 import About from "./About";
-import AdventureBanner from "./AdventureBanner";
+import SearchForm from "./SearchForm";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Landing />
       <Search />
-      <AdventureBanner />
+      <SearchForm />
       <About />
     </AppWrapper>
   );

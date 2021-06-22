@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
-const AdventureBanner = () => {
+const SearchForm = () => {
   return (
     <AdventureSection>
       <div className="banner">
         <form className="flex-form">
-          <h1 style={{color: 'white', fontWeight: '500'}}>Search</h1>
+          <h1 style={{ color: "white", fontWeight: "500" }}>Search</h1>
           <div>
             <select name="Make" id="" className="select">
               <option value="0">Make</option>
@@ -112,4 +112,4 @@ const AdventureSection = styled.section`
     }
   }
 `;
-export default AdventureBanner;
+export default SearchForm;
