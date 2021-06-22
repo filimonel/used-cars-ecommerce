@@ -8,17 +8,42 @@ const About = () => {
     <SearchFormSection>
       <div className="content-wrapper">
         <div className="content-card">
-
+          <img src="/images/marketplace.svg" alt="" />
+          <h3>Saftey first</h3>
+          <div className="text-wrapper">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              quam accusamus, odio magnam laboriosam fugiat animi inventore.
+            </p>
+          </div>
         </div>
-        <div className="content-card"></div>
-        <div className="content-card"></div>
+        <div className="content-card">
+          <img src="/images/confidence.svg" alt="" />
+          <h3>Buy with confidence</h3>
+          <div className="text-wrapper">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              quam accusamus, odio magnam laboriosam fugiat animi inventore.
+            </p>
+          </div>
+        </div>
+        <div className="content-card">
+          <img src="/images/search.svg" alt="" />
+          <h3>Powerful research tools</h3>
+          <div className="text-wrapper">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              quam accusamus, odio magnam laboriosam fugiat animi inventore.
+            </p>
+          </div>
+        </div>
       </div>
     </SearchFormSection>
   );
 };
 
 const SearchFormSection = styled.section`
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   background: white;
   display: flex;
@@ -32,8 +57,23 @@ const SearchFormSection = styled.section`
   }
   .content-card {
     width: 350px;
-    height: 400px;
+    height: 300px;
     box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  .text-wrapper {
+    width: 60%;
+    p {
+      font-weight: 300;
+      color: gray;
+    }
   }
 `;
 

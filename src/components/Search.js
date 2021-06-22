@@ -68,6 +68,7 @@ const CarBodyWrapper = styled.div`
   }
   img {
     height: 50px;
+    width: 130px;
     margin-bottom: 10px;
     cursor: pointer;
   }
