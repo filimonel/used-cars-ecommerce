@@ -12,37 +12,37 @@ const Search = () => {
       </Fade>
 
       <CarBodyWrapper>
-        <Fade delay={200}>
+        <Fade delay={200} duration={500}>
           <div className="car-body-card">
             <img src="/images/hatchback.png" alt="" />
             <p>Hatch</p>
           </div>
         </Fade>
-        <Fade delay={400}>
+        <Fade delay={400} duration={500}>
           <div className="car-body-card">
             <img src="/images/sedan.png" alt="" />
             <p>Sedan</p>
           </div>
         </Fade>
-        <Fade delay={600}>
+        <Fade delay={600} duration={500}>
           <div className="car-body-card">
             <img src="/images/convertible.png" alt="" />
             <p>Convertible</p>
           </div>
         </Fade>
-        <Fade delay={800}>
+        <Fade delay={800} duration={500}>
           <div className="car-body-card">
             <img src="/images/wagon.png" alt="" />
             <p>Wagon</p>
           </div>
         </Fade>
-        <Fade delay={1000}>
+        <Fade delay={1000} duration={500}>
           <div className="car-body-card">
             <img src="/images/ute.png" alt="" />
             <p>Ute</p>
           </div>
         </Fade>
-        <Fade delay={1200}>
+        <Fade delay={1200} duration={500}>
           <div className="car-body-card">
             <img src="/images/suv.png" alt="" />
             <p>Suv</p>
