@@ -36,7 +36,7 @@ const Footer = () => {
 };
 
 const FooterSection = styled.section`
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   background: #f3f8fb;
   display: flex;
@@ -50,12 +50,19 @@ const FooterSection = styled.section`
     h4 {
       font-weight: 400;
       letter-spacing: 1px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      color: gray;
     }
     svg {
       margin: 0px 5px;
       height: 25px;
       width: 25px;
+      color: gray;
+      cursor: pointer;
+      transition: 0.5s ease;
+      &:hover {
+        color: black;
+      }
     }
   }
   .contacts {
@@ -74,11 +81,13 @@ const FooterSection = styled.section`
       h4 {
         font-weight: 400;
         font-size: 1rem;
-        
+        color: gray;
       }
       p {
         font-weight: 300;
         font-size: 0.8rem;
+        color: gray;
+        margin-top: 5px;
       }
     }
   }
