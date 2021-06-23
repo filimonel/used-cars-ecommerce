@@ -63,6 +63,11 @@ const SearchFormSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin: 0 10px;
+    h3 {
+      letter-spacing: 0.5px;
+      color: #14377d;
+    }
   }
   img {
     height: 100px;

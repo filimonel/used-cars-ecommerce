@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import Cars from "./Cars";
 const Search = () => {
   return (
-    <SearchSection>
+    <SearchSection id='body-car-section'>
       <Fade bottom>
         <div className="title-wrapper">
           <h1>Browse car by body type</h1>
@@ -63,6 +63,7 @@ const SearchSection = styled.section`
     padding: 20px;
     color: #393c41;
     font-weight: 500;
+    letter-spacing: 0.5px;
   }
 `;
 

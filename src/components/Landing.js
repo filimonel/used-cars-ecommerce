@@ -15,7 +15,7 @@ const Landing = () => {
         </div>
       </Fade>
       <Fade top>
-        <a href="#">
+        <a href="#body-car-section">
           <ExpandMoreIcon fontSize="inherit" />
         </a>
       </Fade>

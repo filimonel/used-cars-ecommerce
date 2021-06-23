@@ -7,7 +7,15 @@ const SearchForm = () => {
     <AdventureSection>
       <div className="banner">
         <form className="flex-form">
-          <h1 style={{ color: "white", fontWeight: "500" }}>Search</h1>
+          <h1
+            style={{
+              color: "white",
+              fontWeight: "500",
+              letterSpacing: "0.5px",
+            }}
+          >
+            Search
+          </h1>
           <div>
             <select name="Make" id="" className="select">
               <option value="0">Make</option>
