@@ -36,7 +36,7 @@ const Footer = () => {
 };
 
 const FooterSection = styled.section`
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   background: #f3f8fb;
   display: flex;
