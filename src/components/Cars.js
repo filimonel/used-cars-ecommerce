@@ -6,34 +6,46 @@ import Car from "./Car";
 const Cars = () => {
   return (
     <CarsWrapper>
-      <div>
-        <h1>Featured</h1>
-      </div>
+      <Fade duration={1000}>
+        <div>
+          <h1>Featured</h1>
+        </div>
+      </Fade>
       <div className="cars-cards">
-        <Car
-          avatar="R"
-          title="Mazda 6"
-          img="/images/mazda6.jpeg"
-          location="Fitzroy, VIC"
-        />
-        <Car
-          avatar="L"
-          title="Jeep Wrangler"
-          img="/images/jeep.jpeg"
-          location="Sydney, NSW"
-        />
-        <Car
-          avatar="F"
-          title="Volkswagen Golf"
-          img="/images/golf.jpeg"
-          location="Toorak, VIC"
-        />
-        <Car
-          avatar="E"
-          title="Suzuki Jimny"
-          img="/images/Jimny.jpeg"
-          location="Adelaide, SA"
-        />
+        <Fade left delay={100} duration={1000}>
+          <Car
+            avatar="R"
+            title="Mazda 6"
+            img="/images/mazda6.jpeg"
+            location="Fitzroy, VIC"
+          />
+        </Fade>
+        <Fade left duration={1000}>
+          <Car
+            avatar="L"
+            title="Jeep Wrangler"
+            img="/images/jeep.jpeg"
+            location="Sydney, NSW"
+          />
+        </Fade>
+
+        <Fade right duration={1000}>
+          <Car
+            avatar="F"
+            title="Volkswagen Golf"
+            img="/images/golf.jpeg"
+            location="Toorak, VIC"
+          />
+        </Fade>
+
+        <Fade right delay={100} duration={1000}>
+          <Car
+            avatar="E"
+            title="Suzuki Jimny"
+            img="/images/Jimny.jpeg"
+            location="Adelaide, SA"
+          />
+        </Fade>
       </div>
     </CarsWrapper>
   );
