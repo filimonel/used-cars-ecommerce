@@ -11,10 +11,18 @@ const Footer = () => {
       <div className="socials">
         <h4>Connect with us</h4>
         <div className="social-icons">
-          <FacebookIcon />
-          <InstagramIcon />
-          <LinkedInIcon />
-          <TwitterIcon />
+          <a href="https://www.facebook.com/carsales.com.au/">
+            <FacebookIcon />
+          </a>
+          <a href="https://www.instagram.com/carsalescomau/?hl=en">
+            <InstagramIcon />
+          </a>
+          <a href="">
+            <LinkedInIcon />
+          </a>
+          <a href="">
+            <TwitterIcon />
+          </a>
         </div>
       </div>
       <div className="contacts">
